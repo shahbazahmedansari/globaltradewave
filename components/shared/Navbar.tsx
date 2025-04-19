@@ -13,12 +13,12 @@ const Navbar = () => {
 				height={100}
 			/>
 			<Link href="/">Home</Link>
-			<Link href="/">About Us</Link>
-			<Link href="/">Products</Link>
-			<Link href="/">Blog</Link>
-			<Link href="/">Contact Us</Link>
+			<Link href="/about-us">About Us</Link>
+			<Link href="/products">Products</Link>
+			<Link href="/blog">Blog</Link>
+			<Link href="/contact-us">Contact Us</Link>
 
-			<Link href="/">
+			<Link href="/get-quote">
 				<Button className="bg-yellow-500 text-black hover:cursor-pointer hover:bg-yellow-700">
 					Get a Quote
 				</Button>
