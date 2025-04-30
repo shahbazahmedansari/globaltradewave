@@ -5,19 +5,19 @@ import { Button } from '../ui/button';
 
 const ContactUsCard = () => {
 	return (
-		<section className="bg-black w-full py-5 px-30 flex justify-center items-center text-white">
+		<section className="bg-black w-full py-20 px-30 flex justify-center items-center text-white">
 			<Image
 				src="/assets/icons/icon-1.png"
 				alt="Wheat-icon"
-				width={120}
-				height={120}
+				width={170}
+				height={170}
 			/>
-			<h1 className="font-bold text-3xl mx-3 ">
+			<h1 className="font-bold text-4xl mx-5">
 				WE&apos;RE POPULAR LEADER IN AGRI IMPORTS AND EXPORTS CONNECTING
 				WORLDWIDE
 			</h1>
 			<Link href="/contact-us">
-				<Button className="bg-white rounded-full text-black p-5 hover:cursor-pointer hover:bg-yellow-500 font-bold">
+				<Button className="bg-white rounded-full text-black py-8 px-10 w-[200px] text-2xl hover:cursor-pointer hover:bg-yellow-500 font-bold">
 					Contact Us
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

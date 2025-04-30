@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ContactUsCard from '@/components/shared/ContactUsCard';
 import Card from '@/components/shared/Card';
+import ShippingCard from '@/components/shared/ShippingCard';
 
 export default function Home() {
 	return (
@@ -48,15 +49,20 @@ export default function Home() {
 			</section>
 			<section className="flex m-40">
 				<div className="w-[50%]">
-					<p>Your trusted partner in International Trade</p>
-					<h1>Global Tradewave</h1>
+					<p className="text-green-900 font-semibold">
+						Your trusted partner in International Trade
+					</p>
+					<h1 className="text-7xl font-bold text-green-900 mt-3">
+						Global Tradewave
+					</h1>
 					<Image
 						src="/assets/icons/leaf.png"
 						alt="Leaf"
 						width={100}
 						height={100}
+						className="mt-5"
 					/>
-					<p>
+					<p className="leading-[30px] mt-5 break-normal">
 						Global Tradewave is a leading expert in the
 						export-import business, known for our extensive
 						experience and in-depth understanding of international
@@ -67,14 +73,14 @@ export default function Home() {
 						optimizing supply chain logistics differentiates us from
 						our competitors.
 					</p>
-					<h3>
+					<h3 className="flex mt-3 font-extrabold gap-2">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
-							strokeWidth={1.5}
-							stroke="currentColor"
-							className="size-6">
+							strokeWidth={2.5}
+							stroke="gold"
+							className="size-7">
 							<path
 								strokeLinecap="round"
 								strokeLinejoin="round"
@@ -83,14 +89,14 @@ export default function Home() {
 						</svg>
 						Empowering Farmers & Building a Sustainable Future
 					</h3>
-					<h3>
+					<h3 className="flex mt-3 font-extrabold gap-2">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
-							strokeWidth={1.5}
-							stroke="currentColor"
-							className="size-6">
+							strokeWidth={2.5}
+							stroke="gold"
+							className="size-7">
 							<path
 								strokeLinecap="round"
 								strokeLinejoin="round"
@@ -101,7 +107,7 @@ export default function Home() {
 						Benchmarks
 					</h3>
 					<Link href="/about-us">
-						<Button className="bg-green-900 rounded-full text-black p-5 hover:cursor-pointer hover:bg-yellow-500 font-bold">
+						<Button className="bg-green-700 rounded-full text-black p-6 hover:cursor-pointer hover:bg-yellow-500 font-bold mt-5">
 							About Us
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -119,34 +125,78 @@ export default function Home() {
 						</Button>
 					</Link>
 				</div>
-				<div className="flex w-[50%]">
-					<Image
-						src="/assets/images/image2-1.jpg"
-						alt="Tractor"
-						width={200}
-						height={300}
-					/>
-					<Image
-						src="/assets/images/about-home.jpg"
-						alt="Plant"
-						width={250}
-						height={500}
-					/>
+				<div className="flex w-[50%] mx-10 reltive">
+					<div className="absolute right-100 z-[1]">
+						<Image
+							src="/assets/images/image2-1.jpg"
+							alt="Tractor"
+							width={300}
+							height={200}
+							className="rounded-lg"
+						/>
+					</div>
+					<div className="absolute right-20">
+						<Image
+							src="/assets/images/about-home.jpg"
+							alt="Plant"
+							width={400}
+							height={800}
+							className="rounded-lg"
+						/>
+					</div>
 				</div>
 			</section>
-			<section>
-				<p>Waht We Do?</p>
-				<h1>
+			<section className="bg-amber-50 flex flex-col justify-center items-center p-10">
+				<p className="text-green-900 font-semibold">What We Do?</p>
+				<h1 className="text-7xl font-bold text-green-900 mt-3 text-center">
 					Global TradeWave is dedicated to importing and exporting the
 					finest products across the globe.
 				</h1>
 				<Image
 					src="/assets/icons/leaf.png"
 					alt="Leaf"
-					width={100}
-					height={100}
+					width={50}
+					height={50}
+					className="mt-5"
 				/>
 				<Card />
+			</section>
+			<section className="flex justify-center items-center p-14">
+				<div>
+					<Image
+						src=""
+						alt="Transport"
+						width={200}
+						height={200}
+					/>
+				</div>
+				<div>
+					<p className="text-green-900 font-semibold">
+						Complete Agri Supply Chain
+					</p>
+					<h1 className="text-7xl font-bold text-green-900 mt-3 text-center">
+						Healthy food for your good growth
+					</h1>
+					<Image
+						src="/assets/icons/leaf.png"
+						alt="Leaf"
+						width={50}
+						height={50}
+						className="mt-5"
+					/>
+					<p className='mt-10'>
+						Our supply chain begins with meticulous sourcing, where
+						we select high-quality raw materials from trusted
+						suppliers. This ensures that only the best inputs are
+						used, setting a strong foundation for the entire
+						process.
+					</p>
+					<div className="flex items-center">
+						<ShippingCard />
+						<ShippingCard />
+						<ShippingCard />
+					</div>
+				</div>
 			</section>
 			<ContactUsCard />
 		</main>
