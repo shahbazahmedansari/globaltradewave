@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 
 const ContactUsCard = () => {
 	return (
-		<section className="bg-black w-full py-20 px-30 flex justify-center items-center text-white">
+		<section className="bg-black w-full py-20 px-30 flex justify-center items-center text-white flex-col md:flex-row gap-5">
 			<Image
 				src="/assets/icons/icon-1.png"
 				alt="Wheat-icon"

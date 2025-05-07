@@ -39,8 +39,8 @@ const Footer = () => {
 		},
 	];
 	return (
-		<footer className="bg-green-900 px-20 pt-10">
-			<div className="flex justify-center gap-40">
+		<footer className="bg-green-900 px-20 pt-10 md:flex-row flex-col">
+			<div className="flex justify-center gap-16 flex-col md:gap-40 md:flex-row">
 				<div>
 					<Image
 						src="/assets/logo.png"
@@ -152,7 +152,13 @@ const Footer = () => {
 					&copy; Copyright 2025 by{' '}
 					<strong>Global Agro TradeWave Pvt Ltd.</strong>
 				</p>
-				<FloatingDock items={items} desktopClassName='bg-green-800 text-green-950' mobileClassName='bg-green-800 text-green-950' />
+				<div>
+					<FloatingDock
+						items={items}
+						desktopClassName="bg-green-800 text-green-950"
+						mobileClassName="bg-green-800 text-green-950"
+					/>
+				</div>
 			</div>
 		</footer>
 	);
