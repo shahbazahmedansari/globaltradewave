@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,
@@ -109,7 +108,10 @@ const ContactUs = () => {
                                     Your Message
                                 </FormLabel>
                                 <FormControl>
-                                    <Textarea placeholder="Type your message here" />
+                                    <Textarea
+                                        placeholder="Type your message here"
+                                        {...field}
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
