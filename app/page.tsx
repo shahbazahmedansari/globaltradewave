@@ -49,7 +49,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className="flex md:m-10 m-4 flex-col md:flex-row w-full">
-				<div className="md:w-[50%]">
+				<div className="md:w-[50%] mx-5">
 					<p className="text-green-900 font-semibold">
 						Your trusted partner in International Trade
 					</p>
@@ -243,7 +243,7 @@ export default function Home() {
 						height={50}
 						className="mt-10"
 					/>
-					<div className="mt-10 flex items-center gap-10">
+					<div className="mt-10 flex items-center gap-10 flex-col md:flex-row">
 						<div className="relative">
 							<Image
 								src="/assets/images/image-11.jpg"
