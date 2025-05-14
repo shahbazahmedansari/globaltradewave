@@ -17,8 +17,8 @@ const Card = () => {
 					Agricultural Commodities
 				</h1>
 				<p className="text-center mt-2 font-medium text-xl">
-					I was impresed by the agrion services, not lorem ipsum is
-					simply free text.
+					I was impresed by the agrion services, not lorem ipsum is simply free
+					text.
 				</p>
 			</div>
 		</Link>

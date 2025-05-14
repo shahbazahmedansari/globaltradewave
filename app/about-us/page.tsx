@@ -2,6 +2,8 @@ import React from 'react';
 import ContactUsCard from '@/components/shared/ContactUsCard';
 import { Progress } from '@/components/ui/progress';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 const AboutUs = () => {
 	return (
@@ -54,6 +56,133 @@ const AboutUs = () => {
 						trusted partner for businesses aiming to excel in the global
 						marketplace.
 					</p>
+				</div>
+			</section>
+			<section className="flex flex-col md:flex-row justify-center items-center gap-10 mx-10">
+				<div className="w-full md:w-[50%] m-20">
+					<p className="text-green-900 font-semibold">Healthy Products</p>
+					<h1 className="text-3xl md:text-7xl sm:text-5xl font-bold text-green-900 mt-3">
+						How We Work
+					</h1>
+					<Image
+						src="/assets/icons/leaf.png"
+						alt="Leaf"
+						width={20}
+						height={20}
+						className="mt-5 md:w-[55px] md:h-[25px]"
+					/>
+					<p className="leading-[30px] mt-5 break-normal w-full">
+						As a sourcing agent here is all the task, which we manage to fulfill
+						requirements of our buyers and deliver their order according their
+						needs in given timeline.
+					</p>
+					<h3 className="flex mt-3 font-extrabold gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={2.5}
+							stroke="gold"
+							className="size-7">
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="m4.5 12.75 6 6 9-13.5"
+							/>
+						</svg>
+						We find manufacturer as per buyer requirement.
+					</h3>
+					<h3 className="flex mt-3 font-extrabold gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={2.5}
+							stroke="gold"
+							className="size-7">
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="m4.5 12.75 6 6 9-13.5"
+							/>
+						</svg>
+						We negotiate and fix deal in suitable price range.
+					</h3>
+					<h3 className="flex mt-3 font-extrabold gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={2.5}
+							stroke="gold"
+							className="size-7">
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="m4.5 12.75 6 6 9-13.5"
+							/>
+						</svg>
+						We arrange transportation and handle full consignment.
+					</h3>
+					<h3 className="flex mt-3 font-extrabold gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={2.5}
+							stroke="gold"
+							className="size-7">
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="m4.5 12.75 6 6 9-13.5"
+							/>
+						</svg>
+						If buyer have supplier and manufacturer then we also provide
+						shipment or transportation service.
+					</h3>
+					<h3 className="flex mt-3 font-extrabold gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={2.5}
+							stroke="gold"
+							className="size-7">
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="m4.5 12.75 6 6 9-13.5"
+							/>
+						</svg>
+						We can source products from multiple suppliers.
+					</h3>
+					<Link href="/contact-us">
+						<Button className="bg-green-700 rounded-full text-black p-6 hover:cursor-pointer hover:bg-yellow-500 font-bold mt-5">
+							Contact Us
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								strokeWidth={1.5}
+								stroke="currentColor"
+								className="size-6">
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+								/>
+							</svg>
+						</Button>
+					</Link>
+				</div>
+				<div className="w-full md:w-[50%] max-sm:hidden">
+					<Image
+						src="/assets/images/image-3.png"
+						alt="Logo2"
+						width={500}
+						height={500}
+					/>
 				</div>
 			</section>
 			<section className="flex flex-col md:flex-row justify-center items-center w-full">
@@ -202,6 +331,7 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</section>
+
 			<ContactUsCard />
 		</main>
 	);

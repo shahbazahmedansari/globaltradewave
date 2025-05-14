@@ -64,15 +64,13 @@ export default function Home() {
 						className="mt-5 md:w-[90px] md:h-[40px]"
 					/>
 					<p className="leading-[30px] mt-5 break-normal w-full">
-						Global Tradewave is a leading expert in the
-						export-import business, known for our extensive
-						experience and in-depth understanding of international
-						trade. Over the years, we have become a trusted partner
-						for companies seeking to expand their global footprint.
-						Our unparalleled expertise in navigating complex customs
-						regulations, securing favorable trade agreements, and
-						optimizing supply chain logistics differentiates us from
-						our competitors.
+						Global Tradewave is a leading expert in the export-import business,
+						known for our extensive experience and in-depth understanding of
+						international trade. Over the years, we have become a trusted
+						partner for companies seeking to expand their global footprint. Our
+						unparalleled expertise in navigating complex customs regulations,
+						securing favorable trade agreements, and optimizing supply chain
+						logistics differentiates us from our competitors.
 					</p>
 					<h3 className="flex mt-3 font-extrabold gap-2">
 						<svg
@@ -104,8 +102,7 @@ export default function Home() {
 								d="m4.5 12.75 6 6 9-13.5"
 							/>
 						</svg>
-						Delivering Superior Quality & Setting Industry
-						Benchmarks
+						Delivering Superior Quality & Setting Industry Benchmarks
 					</h3>
 					<Link href="/about-us">
 						<Button className="bg-green-700 rounded-full text-black p-6 hover:cursor-pointer hover:bg-yellow-500 font-bold mt-5">
@@ -150,8 +147,8 @@ export default function Home() {
 			<section className="bg-amber-50 flex flex-col justify-center items-center p-10 md:mt-40 mt-10">
 				<p className="text-green-900 font-semibold">What We Do?</p>
 				<h1 className="text-4xl md:text-7xl font-bold text-green-900 mt-3 text-center">
-					Global TradeWave is dedicated to importing and exporting the
-					finest products across the globe.
+					Global TradeWave is dedicated to importing and exporting the finest
+					products across the globe.
 				</h1>
 				<Image
 					src="/assets/icons/leaf.png"
@@ -194,11 +191,10 @@ export default function Home() {
 						className="mt-10"
 					/>
 					<p className="mt-8 leading-[35px]">
-						Our supply chain begins with meticulous sourcing, where
-						we select high-quality raw materials from trusted
-						suppliers. This ensures that only the best inputs are
-						used, setting a strong foundation for the entire
-						process.
+						Our supply chain begins with meticulous sourcing, where we select
+						high-quality raw materials from trusted suppliers. This ensures that
+						only the best inputs are used, setting a strong foundation for the
+						entire process.
 					</p>
 					<div className="flex flex-col md:flex-row items-center mt-10">
 						<ShippingCard
@@ -315,9 +311,7 @@ export default function Home() {
 										/>
 									</svg>
 								</div>
-								<p className="font-semibold text-lg">
-									Sourcing Agent
-								</p>
+								<p className="font-semibold text-lg">Sourcing Agent</p>
 							</div>
 							<div className="flex items-center gap-4 mt-3">
 								<div className="bg-amber-400 w-7 h-7 rounded-full">
@@ -335,9 +329,7 @@ export default function Home() {
 										/>
 									</svg>
 								</div>
-								<p className="font-semibold text-lg">
-									Training & consultancy
-								</p>
+								<p className="font-semibold text-lg">Training & consultancy</p>
 							</div>
 						</div>
 					</div>
